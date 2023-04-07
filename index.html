@@ -1,0 +1,95 @@
+<!Doctype Html>
+<Html>   
+<Head>    
+<meta charset="ISO-8859-1">
+<Title>Home Page</Title>
+<style type=text/css> 
+body 
+{
+height: 125vh;
+margin-top: 80px;
+padding: 30px;
+background-size: cover;
+font-family: sans-serif;
+}
+header {
+background-color: orange;
+position: fixed;
+left: 0;
+right: 0;
+top: 5px;
+height: 30px;
+display: flex;
+align-items: center;
+box-shadow: 0 0 25px 0 black;
+}
+header * {
+display: inline;
+}
+header li {
+margin: 20px;
+}
+header li a {
+color: blue;
+text-decoration: none;
+}
+input[type=text],select{
+	width:100%;
+	padding:12px 20px;
+	margin:8px 0;
+	display:inline-block;
+	border:1px solid #ccc;
+	border-radius:4px;
+	box-sizing:border-box;
+}
+
+button[type=submit]{
+	width:30%;
+	background-color:orange;
+	color:white;
+	padding:14px 20px;
+	margin:8px 0;
+	border:none;
+	border-radius:4px;
+	cursor:pointer;
+}
+button[type=submit]{
+	background-color: #45a049;
+}
+div{
+	border-radius:5px;
+	background-color:#f2f2f2;
+	padding:20px;
+}
+</style> 
+</Head>
+<Body> 
+<header>
+<nav>
+<ul>
+<li>
+<img src="imgs/bankimg.jpg" width="30px" heigth="30px">
+</li>
+<li>
+<a href="addAccount.html"> Add Account </a>
+</li>
+<li>
+<a href="displayAccount.jsp">Display Account </a>
+</li>
+</ul>
+</nav>
+</header>
+<div>
+<form action="indexpage" method="get">
+	      	<label style="color:blue; font-size:20px;">Enter the Account Number</label> <br><br>
+	      	<input type="text" name="account" placeholder="Account number"/>
+	       <br><br>
+	      	<label style="color:blue; font-size:20px;">Enter the Amount</label> <br><br>
+	      		<input type="text" name="Amt" placeholder="Amount "/>
+	      		<br><br>
+	      <button type="submit" name="text" value="deposite">Deposite</button>
+	      <button type="submit" name="text" value="Withdraw">Withdraw</button>
+</form>
+</div>
+</Body> 
+</Html>
